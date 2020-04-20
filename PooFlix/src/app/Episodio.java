@@ -6,4 +6,10 @@ public class Episodio {
     public int numero;
     public String descripcion;
     public int duracionEnMinutos;
+
+    public void reproducir() {
+
+        System.out.println("Reproduciendo Episodio " + this.numero + " " + this.nombre);
+
+    }
 }
