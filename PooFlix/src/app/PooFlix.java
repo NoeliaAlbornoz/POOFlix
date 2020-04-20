@@ -13,7 +13,7 @@ public class PooFlix {
         this.inicializarBreakingBad();
         this.inicializarLucifer();
         this.inicializarGoodDoctor();
-    
+
     }
 
     public Serie buscarSerie(String titulo) {
@@ -29,122 +29,188 @@ public class PooFlix {
 
     public void inicializarBreakingBad() {
 
-        Serie serie1 = new Serie();
-        serie1.nombre = "Breaking Bad";
-        this.series.add(serie1);
+        Serie serie = new Serie();
 
-        Temporada temp1 = new Temporada();
-        temp1.numero = 1;
-        serie1.temporadas.add(temp1);
+        this.series.add(serie);
 
-        Episodio epi1 = new Episodio();
-        epi1.numero = 1;
-        epi1.nombre = "Pilot.";
-        temp1.episodios.add(epi1);
-        Episodio epi2 = new Episodio();
-        epi2.numero = 2;
-        epi2.nombre = "Cat's in the bag.";
-        temp1.episodios.add(epi2);
+        serie.nombre = "Breaking Bad";
 
-        Temporada temp5 = new Temporada();
-        temp5.numero = 5;
-        serie1.temporadas.add(temp5);
+        Clasificacion clasificacion = new Clasificacion();
+        clasificacion.tipo = "PG- 13";
+        clasificacion.edadMinima = 13;
+        clasificacion.descripcion = "Mayores de 13 años";
+        serie.clasificacion = clasificacion;
 
-        Episodio epi7 = new Episodio();
-        epi7.numero = 7;
-        epi7.nombre = "Say my name.";
-        temp5.episodios.add(epi7);
+        Genero genero = new Genero();
+        genero.nombre = "Drama";
+        serie.genero = genero;
+
+        serie.anio = 2008;
+
+        serie.descripcion = "Sinopsis: ¿Qué harías si te enteraras de que te quedan pocos meses de vida, estuvieras a punto de tener un hijo y tuvieras deudas sin solventar? Ante esta situación, Walter White, un profesor de química, decide ponerse a fabricar metanfetamina en secreto para conseguir el máximo dinero posible en poco tiempo para dejárselo a su familia antes de morir.";
+
+        serie.calificacion = 8.00;
+
+        Actor actor = new Actor();
+        actor.nombre = "Bryan Cranston";
+        actor.edad = 64;
+        serie.elenco.add(actor);
+
+        actor = new Actor();
+        actor.nombre = "Aaron Paul";
+        actor.edad = 40;
+        serie.elenco.add(actor);
+        
+        Temporada temp = new Temporada();
+        temp.numero = 1;
+        serie.temporadas.add(temp);
+
+        Episodio epi = new Episodio();
+        epi.numero = 1;
+        epi.nombre = "Pilot.";
+        temp.episodios.add(epi);
+
+        epi = new Episodio();
+        epi.numero = 2;
+        epi.nombre = "Cat's in the bag.";
+        temp.episodios.add(epi);
+
+        temp = new Temporada();
+        temp.numero = 5;
+        serie.temporadas.add(temp);
+
+        epi = new Episodio();
+        epi.numero = 7;
+        epi.nombre = "Say my name.";
+        temp.episodios.add(epi);
 
     }
 
     public void inicializarLucifer() {
 
-        Serie serie2 = new Serie();
-        serie2.nombre = "Lucifer";
-        this.series.add(serie2);
+        Serie serie = new Serie();
 
-        Temporada temp1 = new Temporada();
-        temp1.numero = 1;
-        serie2.temporadas.add(temp1);
+        this.series.add(serie);
 
-        Episodio epi1 = new Episodio();
-        epi1.numero = 1;
-        epi1.nombre = "Pilot.";
-        temp1.episodios.add(epi1);
-        Episodio epi2 = new Episodio();
-        epi2.numero = 2;
-        epi2.nombre = "Lucifer, Stay. Good Devil.";
-        temp1.episodios.add(epi2);
-        Episodio epi3 = new Episodio();
-        epi3.numero = 3;
-        epi3.nombre = "The Would-Be Prince of Darkness.";
-        temp1.episodios.add(epi3);
+        serie.nombre = "Lucifer";
+
+        Clasificacion clasificacion = new Clasificacion();
+        clasificacion.tipo = "PG- 13";
+        clasificacion.edadMinima = 13;
+        clasificacion.descripcion = "Mayores de 13 años";
+        serie.clasificacion = clasificacion;
+
+        Genero genero = new Genero();
+        genero.nombre = "Misterio";
+        serie.genero = genero;
+
+        serie.anio = 2016;
+
+        serie.descripcion = "Sinopsis: Harto del infierno, Lucifer abandona su trono en el averno y se marcha a Los Ángeles, donde empieza a trabajar como detective de homicidios.";
+
+        serie.calificacion = 7.00;
+
+        Actor actor = new Actor();
+        actor.nombre = "Tom Ellis";
+        actor.edad = 41;
+        serie.elenco.add(actor);
+
+        actor = new Actor();
+        actor.nombre = "Lauren German";
+        actor.edad = 41;
+        serie.elenco.add(actor);
+        
+        Temporada temp = new Temporada();
+        temp.numero = 1;
+        serie.temporadas.add(temp);
+
+        Episodio epi = new Episodio();
+        epi.numero = 1;
+        epi.nombre = "Pilot.";
+        temp.episodios.add(epi);
+
+        epi = new Episodio();
+        epi.numero = 2;
+        epi.nombre = "Lucifer, Stay. Good Devil.";
+        temp.episodios.add(epi);
+
+        epi = new Episodio();
+        epi.numero = 3;
+        epi.nombre = "The Would-Be Prince of Darkness.";
+        temp.episodios.add(epi);
 
     }
 
     public void inicializarGoodDoctor() {
 
-        Serie serie3 = new Serie();
-        serie3.nombre = "Good Doctor";
-        this.series.add(serie3);
+        Serie serie = new Serie();
 
-        Genero genero = new Genero();
-        genero.nombre = "Drama";
-        serie3.genero = genero;
+        this.series.add(serie);
 
-        serie3.anio = 2017;
+        serie.nombre = "Good Doctor";
 
-        serie3.calificacion = 8.00;
-
-        serie3.descripcion = "Synopsis: In the pilot of this series, a hospital considers adding a young doctor named Shaun Murphy (Freddie Highmore), who happens to have autism and savant syndrome, to their surgical staff.";
-        
         Clasificacion clasificacion = new Clasificacion();
         clasificacion.tipo = "PG- 13";
         clasificacion.edadMinima = 13;
-        serie3.clasificacion = clasificacion;
+        clasificacion.descripcion = "Mayores de 13 años";
+        serie.clasificacion = clasificacion;
 
-        Temporada temp1 = new Temporada();
-        temp1.numero = 1;
-        serie3.temporadas.add(temp1);
+        Genero genero = new Genero();
+        genero.nombre = "Drama médico";
+        serie.genero = genero;
 
-        Episodio epi1 = new Episodio();
-        epi1.numero = 1;
-        epi1.nombre = "Burnt Food.";
-        temp1.episodios.add(epi1);
-        Episodio epi2 = new Episodio();
-        epi2.numero = 2;
-        epi2.nombre = "Mount Rushmore.";
-        temp1.episodios.add(epi2);
+        serie.anio = 2017;
 
-        Temporada temp2 = new Temporada();
-        temp2.numero = 2;
-        serie3.temporadas.add(temp2);
+        serie.descripcion = "Sinopsis: Un cirujano joven y autista que padece el síndrome del sabio empieza a trabajar en un hospital prestigioso. Allá tendrá que vencer el escepticismo con el que sus colegas lo reciben.";
 
-        Episodio epi10 = new Episodio();
-        epi10.numero = 10;
-        epi10.nombre = "Quarantine.";
-        temp2.episodios.add(epi10);
+        serie.calificacion = 9.00;
 
-        Temporada temp3 = new Temporada();
-        temp3.numero = 3;
-        serie3.temporadas.add(temp3);
+        Actor actor = new Actor();
+        actor.nombre = "Freddie Highmore";
+        actor.edad = 28;
+        serie.elenco.add(actor);
 
-        Episodio epi8 = new Episodio();
-        epi8.numero = 8;
-        epi8.nombre = "Moonshot.";
-        temp3.episodios.add(epi8);
-        Episodio epi12 = new Episodio();
-        epi12.numero = 12;
-        epi12.nombre = "Mutations.";
-        temp3.episodios.add(epi12);
+        actor = new Actor();
+        actor.nombre = "Antonia Thomas";
+        actor.edad = 33;
+        serie.elenco.add(actor);
 
-        Actor actor1 = new Actor();
-        actor1.nombre = "Freddie Highmore";
-        serie3.elenco.add(actor1);
+        Temporada temp = new Temporada();
+        temp.numero = 1;
+        serie.temporadas.add(temp);
 
-        Actor actor2 = new Actor();
-        actor2.nombre = "Antonia Thomas";
-        serie3.elenco.add(actor2);
+        Episodio epi = new Episodio();
+        epi.numero = 1;
+        epi.nombre = "Burnt Food.";
+        temp.episodios.add(epi);
+
+        epi = new Episodio(); 
+        epi.numero = 2;
+        epi.nombre = "Mount Rushmore.";
+        temp.episodios.add(epi);
+
+        temp = new Temporada();
+        temp.numero = 2;
+        serie.temporadas.add(temp);
+
+        epi = new Episodio();
+        epi.numero = 10;
+        epi.nombre = "Quarantine.";
+        temp.episodios.add(epi);
+
+        temp = new Temporada();
+        temp.numero = 3;
+        serie.temporadas.add(temp);
+
+        epi = new Episodio();
+        epi.numero = 8;
+        epi.nombre = "Moonshot.";
+        temp.episodios.add(epi);
+
+        epi = new Episodio();
+        epi.numero = 12;
+        epi.nombre = "Mutations.";
+        temp.episodios.add(epi);
 
     }
 

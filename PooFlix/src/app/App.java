@@ -11,11 +11,27 @@ public class App {
 
         Serie bb = miPooflix.buscarSerie("Good Doctor");
 
-        Temporada laMejorTemporada = bb.getTemporada(1);
+        Temporada laMejorTemporada = bb.getTemporada(2);
 
         Episodio elTop;
 
-        elTop = laMejorTemporada.getEpisodio(1);
+        elTop = laMejorTemporada.getEpisodio(10);
+
+        elTop.reproducir();
+
+        bb = miPooflix.buscarSerie("Lucifer");
+
+        laMejorTemporada = bb.getTemporada(1);
+
+        elTop = laMejorTemporada.getEpisodio(2);
+
+        elTop.reproducir();
+
+        bb = miPooflix.buscarSerie("Breaking Bad");
+
+        laMejorTemporada = bb.getTemporada(5);
+
+        elTop = laMejorTemporada.getEpisodio(7);
 
         elTop.reproducir();
 

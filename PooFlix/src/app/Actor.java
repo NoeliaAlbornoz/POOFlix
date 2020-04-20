@@ -2,6 +2,7 @@ package app;
 
 public class Actor {
 
-    String nombre;
+    public String nombre;
+    public int edad;
 
 }
