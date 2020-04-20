@@ -1,8 +1,6 @@
 package app;
 
-public class Actor {
+public class Actor extends Persona{
 
-    public String nombre;
-    public int edad;
-
+    
 }

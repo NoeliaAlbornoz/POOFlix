@@ -19,6 +19,12 @@ public class App {
 
         elTop.reproducir();
 
+        laMejorTemporada = bb.getTemporada(1);
+
+        elTop = laMejorTemporada.getWebsodio(1); //WEBSODIO
+
+        elTop.reproducir();
+
         bb = miPooflix.buscarSerie("Lucifer");
 
         laMejorTemporada = bb.getTemporada(1);
