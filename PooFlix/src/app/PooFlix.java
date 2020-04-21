@@ -206,11 +206,13 @@ public class PooFlix {
         temp.episodios.add(epi);
 
         Websodio websodio = new Websodio();
-        websodio.numero = 1;
+        websodio.numero = 20;
         websodio.nombre = "Chilhood";
         websodio.duracionEnMinutos = 15;
         websodio.descripcion = "Precuela. Shaun atraviesa una penosa niñez y sólo encuentra paz en la compañía de su hermano.";
-        temp.websodios.add(websodio);
+        websodio.url = "http://websodio.com";
+        //temp.websodios.add(websodio);
+        temp.episodios.add(websodio);
 
         temp = new Temporada();
         temp.numero = 2;
@@ -246,7 +248,9 @@ public class PooFlix {
         websodio.nombre = "Claire's vocation";
         websodio.duracionEnMinutos = 12;
         websodio.descripcion = "Precuela. Una joven Claire descubre un libro de anatomía en la biblioteca de su abuelo, materia que le estaba prohibida estudiar.";
-        temp.websodios.add(websodio);
+        websodio.url = "http://websodio.com";
+        //temp.websodios.add(websodio);
+        temp.episodios.add(websodio);
 
     }
 
