@@ -7,7 +7,7 @@ public class Temporada {
 
     public int numero;
     public List<Episodio> episodios = new ArrayList<>();
-    public List<Websodio> websodios = new ArrayList<>();
+    //public List<Websodio> websodios = new ArrayList<>();
 
     public Episodio getEpisodio(int numero) {
 
@@ -20,7 +20,7 @@ public class Temporada {
 
     }
 
-    public Websodio getWebsodio(int numero) {
+    /*public Websodio getWebsodio(int numero) {
 
         for (Websodio web : this.websodios) {
             if (web.numero == numero) {
@@ -29,6 +29,6 @@ public class Temporada {
         }
         return null;
 
-    }
+    }*/
 
 }
