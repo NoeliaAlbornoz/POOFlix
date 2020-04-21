@@ -1,8 +1,5 @@
 package app;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Websodio extends Episodio {
 
     public String url;
