@@ -11,35 +11,25 @@ public class App {
 
         Serie bb = miPooflix.buscarSerie("Good Doctor");
 
-        Temporada laMejorTemporada = bb.getTemporada(2);
+        Temporada laMejorTemporada = bb.getTemporada(1);
 
         Episodio elTop;
-
-        elTop = laMejorTemporada.getEpisodio(10);
-
-        elTop.reproducir();
-
-        laMejorTemporada = bb.getTemporada(1);
-
-        elTop = laMejorTemporada.getWebsodio(1); //WEBSODIO
-
-        elTop.reproducir();
-
-        bb = miPooflix.buscarSerie("Lucifer");
-
-        laMejorTemporada = bb.getTemporada(1);
 
         elTop = laMejorTemporada.getEpisodio(2);
 
         elTop.reproducir();
 
-        bb = miPooflix.buscarSerie("Breaking Bad");
-
-        laMejorTemporada = bb.getTemporada(5);
-
-        elTop = laMejorTemporada.getEpisodio(7);
+        elTop = laMejorTemporada.getEpisodio(20); //WEBSODIO
 
         elTop.reproducir();
+
+        //Websodio web;
+        //web = laMejorTemporada.getWebsodio(20);
+        //web.reproducir();
+
+        //Ejecucion en linea
+        //laMejorTemporada.getWebsodio(1).reproducir();
+        //System.out.println("Url: " + laMejorTemporada.getWebsodio(1).url);
 
     }
 }
