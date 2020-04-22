@@ -49,4 +49,8 @@ public class Temporada {
         return lista;
     }
 
+    public int getCantidadEpisodios(){
+        return this.episodios.size();
+    }
+
 }
