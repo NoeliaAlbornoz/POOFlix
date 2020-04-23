@@ -5,9 +5,30 @@ import java.util.List;
 
 public class Temporada {
 
-    public int numero;
-    public List<Episodio> episodios = new ArrayList<>();
+    public Temporada(int numero){
+        this.numero = numero;
+    }
+
+    private int numero;
+    private List<Episodio> episodios = new ArrayList<>();
     //public List<Websodio> websodios = new ArrayList<>();
+
+    public int getNumero(){
+        return this.numero;
+    }
+
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+
+    public List<Episodio> getEpisodios(){
+        return this.episodios;
+    }
+
+    public void setEpisodios(List<Episodio> episodios){
+        this.episodios = episodios;
+
+    }
 
     public Episodio getEpisodio(int numero) {
 

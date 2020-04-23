@@ -9,7 +9,15 @@ public class Websodio extends Episodio {
 
     }
 
-    public String url;
+    private String url;
+
+    public String getUrl(){
+        return this.url;
+    }
+
+    public void setUrl(String url){
+        this.url = url;
+    }
 
     @Override // Anotacion que indica que el metodo se sobreescribe (redefinicion)
     public void reproducir() {

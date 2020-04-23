@@ -5,7 +5,21 @@ import java.util.List;
 
 public class Serie extends Contenido {
 
-    public List<Temporada> temporadas = new ArrayList<>();
+    public Serie(String nombre, int anio, double calificacion){
+        this.setNombre(nombre);
+        this.setAnio(anio);
+        this.setCalificacion(calificacion);
+    }
+
+    private List<Temporada> temporadas = new ArrayList<>();
+
+    public List<Temporada> getTemporadas(){
+        return this.temporadas;
+    }
+
+    public void setTemporadas(List<Temporada> temporadas){
+        this.temporadas = temporadas;
+    }
 
     public Temporada getTemporada(int numero) {
         // Recorrer cada temporada
@@ -13,7 +27,7 @@ public class Serie extends Contenido {
         // Devolver temporada
 
         for (Temporada tempo : this.temporadas) {
-            if (tempo.numero == numero) {
+            if (tempo.getNumero() == numero) {
                 return tempo;
 
             }
