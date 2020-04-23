@@ -12,10 +12,10 @@ public class Episodio {
         this.duracionEnMinutos = duracion;
     }
 
-    public String nombre;
-    public int numero;
-    public String descripcion;
-    public int duracionEnMinutos;
+    private String nombre;
+    private int numero;
+    private String descripcion;
+    private int duracionEnMinutos;
 
     // Constructor por defecto - vacio (viene por defecto - no se ve), pero si creo
     // uno, debo crear a mano el vacio si lo necesito
@@ -41,6 +41,37 @@ public class Episodio {
         this.numero = numero;
     }*/
 
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public int getNumero(){
+        return this.numero;
+    }
+
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+
+    public void setDescripcion(String descripcion){
+        this.descripcion = descripcion;
+    }
+
+    public int getDuracionEnMinutos(){
+        return this.duracionEnMinutos;
+    }
+
+    public void setDuracionEnMinutos(int duracionEnMinutos){
+        this.duracionEnMinutos = duracionEnMinutos;
+    }
     public void reproducir() {
 
         System.out.println("Reproduciendo Episodio " + this.numero + " " + this.nombre);

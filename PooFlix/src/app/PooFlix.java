@@ -69,14 +69,14 @@ public class PooFlix {
         // epi.numero = 1;
         // epi.nombre = "Pilot.";
         // epi.duracionEnMinutos = 58;
-        epi.descripcion = "Walter White, profesor de química en un instituto, descubre que tiene cáncer de pulmón y decide trabajar junto con un ex-alumno elaborando metanfetamina de alta calidad para poder ganar dinero para que su familia se mantenga.";
+        epi.setDescripcion("Walter White, profesor de química en un instituto, descubre que tiene cáncer de pulmón y decide trabajar junto con un ex-alumno elaborando metanfetamina de alta calidad para poder ganar dinero para que su familia se mantenga."); 
         temp.episodios.add(epi);
 
         epi = new Episodio(2, "Cat's in the bag.", 57);
         // epi.numero = 2;
         // epi.nombre = "Cat's in the bag.";
         // epi.duracionEnMinutos = 57;
-        epi.descripcion = "Walt y Jesse intentan deshacerse de los dos cuerpos en la caravana lo que se vuelve cada vez más complicado cuando uno de ellos, Krazy-8, se despierta.";
+        epi.setDescripcion("Walt y Jesse intentan deshacerse de los dos cuerpos en la caravana lo que se vuelve cada vez más complicado cuando uno de ellos, Krazy-8, se despierta.");
         temp.episodios.add(epi);
 
         temp = new Temporada();
@@ -87,7 +87,7 @@ public class PooFlix {
         // epi.numero = 7;
         // epi.nombre = "Say my name.";
         // epi.duracionEnMinutos = 54;
-        epi.descripcion = "Walter asume un nuevo nivel de superioridad en su proyecto de negocios. Mike tiene que tratar con las consecuencias de sus actos.";
+        epi.setDescripcion("Walter asume un nuevo nivel de superioridad en su proyecto de negocios. Mike tiene que tratar con las consecuencias de sus actos.");
         temp.episodios.add(epi);
 
     }
@@ -134,21 +134,21 @@ public class PooFlix {
         // epi.numero = 1;
         // epi.nombre = "Pilot.";
         // epi.duracionEnMinutos = 58;
-        epi.descripcion = "Lucifer Morningstar, el gobernante retirado del infierno, utiliza sus poderes de persuasión para ayudar a la detective Chloe Decker a detener al verdadero culpable de un asesinato.";
+        epi.setDescripcion("Lucifer Morningstar, el gobernante retirado del infierno, utiliza sus poderes de persuasión para ayudar a la detective Chloe Decker a detener al verdadero culpable de un asesinato.");
         temp.episodios.add(epi);
 
         epi = new Episodio(2, "Lucifer, Stay. Good Devil.", 56);
         // epi.numero = 2;
         // epi.nombre = "Lucifer, Stay. Good Devil.";
         // epi.duracionEnMinutos = 56;
-        epi.descripcion = "Lucifer y Chloe vuelven a trabajar juntos para resolver un homicidio, esta vez el del hijo de una estrella de cine que fue asesinado por un paparazzi​ excesivo que frecuentemente creaba situaciones volátiles para obtener la «primera primicia» de la historia.";
+        epi.setDescripcion("Lucifer y Chloe vuelven a trabajar juntos para resolver un homicidio, esta vez el del hijo de una estrella de cine que fue asesinado por un paparazzi​ excesivo que frecuentemente creaba situaciones volátiles para obtener la «primera primicia» de la historia.");
         temp.episodios.add(epi);
 
         epi = new Episodio(3, "The Would-Be Prince of Darkness.", 62);
         // epi.numero = 3;
         // epi.nombre = "The Would-Be Prince of Darkness.";
         // epi.duracionEnMinutos = 62;
-        epi.descripcion = "Cuando una estrella de fútbol a quien Lucifer convenció de perder su virginidad es arrestada por el asesinato de la chica con la que tuvo relaciones sexuales, Lucifer trabaja para demostrar su inocencia.";
+        epi.setDescripcion("Cuando una estrella de fútbol a quien Lucifer convenció de perder su virginidad es arrestada por el asesinato de la chica con la que tuvo relaciones sexuales, Lucifer trabaja para demostrar su inocencia."); 
         temp.episodios.add(epi);
 
     }
@@ -195,21 +195,21 @@ public class PooFlix {
         // epi.numero = 1;
         // epi.nombre = "Burnt Food.";
         // epi.duracionEnMinutos = 42;
-        epi.descripcion = "La junta de directores del Hospital San José St. Bonaventure debe decidir si permite la contratación de un joven médico con síndrome de Savant y autismo entre su personal quirúrgico.";
+        epi.setDescripcion("La junta de directores del Hospital San José St. Bonaventure debe decidir si permite la contratación de un joven médico con síndrome de Savant y autismo entre su personal quirúrgico."); 
         temp.episodios.add(epi);
 
         epi = new Episodio(2, "Mount Rushmore.", 45);
         // epi.numero = 2;
         // epi.nombre = "Mount Rushmore.";
         // epi.duracionEnMinutos = 45;
-        epi.descripcion = "La atención a los detalles del doctor Murphy complica su primer día en el Hospital St. Bonaventure. Mientras tanto, Claire aprende una valiosa lección sobre la honestidad.";
+        epi.setDescripcion("La atención a los detalles del doctor Murphy complica su primer día en el Hospital St. Bonaventure. Mientras tanto, Claire aprende una valiosa lección sobre la honestidad.");
         temp.episodios.add(epi);
 
         Websodio websodio = new Websodio(20, "Chilhood", 15, "http://websodio.com");
         // websodio.numero = 20;
         // websodio.nombre = "Chilhood";
         // websodio.duracionEnMinutos = 15;
-        websodio.descripcion = "Precuela. Shaun atraviesa una penosa niñez y sólo encuentra paz en la compañía de su hermano.";
+        websodio.setDescripcion("Precuela. Shaun atraviesa una penosa niñez y sólo encuentra paz en la compañía de su hermano.");
         // websodio.url = "http://websodio.com";
         // temp.websodios.add(websodio);
         temp.episodios.add(websodio);
@@ -222,7 +222,7 @@ public class PooFlix {
         // epi.numero = 10;
         // epi.nombre = "Quarantine.";
         // epi.duracionEnMinutos = 42;
-        epi.descripcion = "Cuando dos pacientes procedentes del mismo vuelo llegan al hospital con síntomas que empeoran rápidamente, el equipo médico tiene que poner en cuarentena la zona de urgencias antes de que el virus se extienda.";
+        epi.setDescripcion("Cuando dos pacientes procedentes del mismo vuelo llegan al hospital con síntomas que empeoran rápidamente, el equipo médico tiene que poner en cuarentena la zona de urgencias antes de que el virus se extienda.");
         temp.episodios.add(epi);
 
         temp = new Temporada();
@@ -233,21 +233,21 @@ public class PooFlix {
         // epi.numero = 8;
         // epi.nombre = "Moonshot.";
         // epi.duracionEnMinutos = 40;
-        epi.descripcion = "La continua vacilación de Neil para correr riesgos lo hace enfrentarse con Audrey por el tratamiento de Wren, una joven que planea viajar a la luna y por lo tanto necesita ambos pulmones intactos; trabajando juntos, Audrey y Neil realizan con éxito la cirugía.";
+        epi.setDescripcion("La continua vacilación de Neil para correr riesgos lo hace enfrentarse con Audrey por el tratamiento de Wren, una joven que planea viajar a la luna y por lo tanto necesita ambos pulmones intactos; trabajando juntos, Audrey y Neil realizan con éxito la cirugía.");
         temp.episodios.add(epi);
 
         epi = new Episodio(12, "Mutations.", 45);
         // epi.numero = 12;
         // epi.nombre = "Mutations.";
         // epi.duracionEnMinutos = 45;
-        epi.descripcion = "La Dra. Audrey Lim, el Dr. Shaun Murphy y la Dra. Morgan Reznick tratan a un corredor de 25 años que sufre de una severa hinchazón; pero cuando las cosas empeoran, el Dr. Shaun Murphy solicita la ayuda de la Dra. Carly Lever.";
+        epi.setDescripcion("La Dra. Audrey Lim, el Dr. Shaun Murphy y la Dra. Morgan Reznick tratan a un corredor de 25 años que sufre de una severa hinchazón; pero cuando las cosas empeoran, el Dr. Shaun Murphy solicita la ayuda de la Dra. Carly Lever.");
         temp.episodios.add(epi);
 
         websodio = new Websodio(4, "Claire's vocation", 12, "http://websodio.com");
         // websodio.numero = 4;
         // websodio.nombre = "Claire's vocation";
         // websodio.duracionEnMinutos = 12;
-        websodio.descripcion = "Precuela. Una joven Claire descubre un libro de anatomía en la biblioteca de su abuelo, materia que le estaba prohibida estudiar.";
+        websodio.setDescripcion("Precuela. Una joven Claire descubre un libro de anatomía en la biblioteca de su abuelo, materia que le estaba prohibida estudiar.");
         // websodio.url = "http://websodio.com";
         // temp.websodios.add(websodio);
         temp.episodios.add(websodio);

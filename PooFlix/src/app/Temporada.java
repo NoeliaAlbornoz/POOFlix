@@ -12,7 +12,7 @@ public class Temporada {
     public Episodio getEpisodio(int numero) {
 
         for (Episodio epi : this.episodios) {
-            if (epi.numero == numero) {
+            if (epi.getNumero() == numero) {
                 return epi;
             }
         }
