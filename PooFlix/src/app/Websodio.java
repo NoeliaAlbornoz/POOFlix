@@ -2,6 +2,13 @@ package app;
 
 public class Websodio extends Episodio {
 
+    //Constructor con super (llamo constructor de la superclase)
+    public Websodio(int numero, String nombre, int duracion, String url){
+        super(numero, nombre, duracion);
+        this.url = url;
+
+    }
+
     public String url;
 
     @Override // Anotacion que indica que el metodo se sobreescribe (redefinicion)
