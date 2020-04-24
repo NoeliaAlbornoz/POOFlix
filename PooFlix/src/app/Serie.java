@@ -11,6 +11,12 @@ public class Serie extends Contenido {
         this.setCalificacion(calificacion);
     }
 
+    //Constructor que reutiliza el constructor de arriba (similar a como lo hace super)
+    public Serie(String nombre, int anio, double calificacion, Genero genero){
+        this(nombre, anio, calificacion); //Reutilizacion
+        this.setGenero(genero);
+    }
+
     private List<Temporada> temporadas = new ArrayList<>();
 
     public List<Temporada> getTemporadas(){

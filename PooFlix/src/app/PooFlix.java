@@ -7,9 +7,11 @@ public class PooFlix {
 
     public List<Pelicula> peliculas = new ArrayList<>();
     public List<Serie> series = new ArrayList<>();
+    public List<INominable> nominados = new ArrayList<>();
 
     public void inicializarCatalogo() {
 
+        inicializarPelis();
         this.inicializarBreakingBad();
         this.inicializarLucifer();
         this.inicializarGoodDoctor();
@@ -24,6 +26,26 @@ public class PooFlix {
             }
         }
         return null;
+
+    }
+
+    public void inicializarPelis() {
+
+        Pelicula peli = new Pelicula("The Shining", 146);
+
+        Actor actor = new Actor("Jack Nicholson", 83);
+
+        peli.getElenco().add(actor);
+
+        this.peliculas.add(peli);
+
+        peli = new Pelicula("Deadpool", 109);
+        
+        actor = new Actor("Ryan Reynolds", 43);
+        
+        peli.getElenco().add(actor);
+
+        this.peliculas.add(peli);
 
     }
 
@@ -213,6 +235,28 @@ public class PooFlix {
         websodio = new Websodio(4, "Claire's vocation", 12, "http://websodio.com");
         websodio.setDescripcion("Precuela. Una joven Claire descubre un libro de anatomía en la biblioteca de su abuelo, materia que le estaba prohibida estudiar.");
         temp.getEpisodios().add(websodio);
+    }
+
+    public void inicializarListaNominados() {
+
+        for (Pelicula peli : this.peliculas) {
+            this.nominados.add(peli);
+            for (Actor actor : peli.getElenco())
+                this.nominados.add(actor);
+
+        }
+        for (Serie serie : this.series) {
+            for (Actor actor : serie.getElenco())
+                this.nominados.add(actor);
+
+        }
+    }
+
+    public void reproducirTrailersDeNominacion() {
+        for (INominable nominado : nominados) {
+
+            nominado.reproducirTrailerNominacion();
+        }
     }
 
 }

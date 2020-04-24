@@ -58,6 +58,9 @@ public class App {
             System.out.println("No hay que hacer más nada");
         }
 
+        miPooflix.inicializarListaNominados();
+
+        miPooflix.reproducirTrailersDeNominacion();
 
     }
 }
