@@ -32,7 +32,9 @@ public class Actor extends Persona implements INominable {
     }
 
     public void decirDiscurso() {
-        System.out.println("Quiero agradecer a mi familia");
+
+        System.out.println("Quiero agradecer a ....");
+
     }
 
 }
