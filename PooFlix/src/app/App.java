@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App {
 
     public static Scanner Teclado = new Scanner(System.in);
-    
+
     public static void main(String[] args) throws Exception {
 
         PooFlix miPooflix = new PooFlix();
@@ -24,17 +24,17 @@ public class App {
 
         elTop.reproducir();
 
-        elTop = laMejorTemporada.getEpisodio(20); //WEBSODIO
+        elTop = laMejorTemporada.getEpisodio(20); // WEBSODIO
 
         elTop.reproducir();
 
-        //Websodio web;
-        //web = laMejorTemporada.getWebsodio(20);
-        //web.reproducir();
+        // Websodio web;
+        // web = laMejorTemporada.getWebsodio(20);
+        // web.reproducir();
 
-        //Ejecucion en linea
-        //laMejorTemporada.getWebsodio(1).reproducir();
-        //System.out.println("Url: " + laMejorTemporada.getWebsodio(1).url);
+        // Ejecucion en linea
+        // laMejorTemporada.getWebsodio(1).reproducir();
+        // System.out.println("Url: " + laMejorTemporada.getWebsodio(1).url);
 
         System.out.println("Empezando con Casteo");
 
@@ -51,8 +51,8 @@ public class App {
 
         epiDemo.reproducir();
 
-        if(epiDemo instanceof Websodio){
-            Websodio webi = (Websodio)epiDemo;
+        if (epiDemo instanceof Websodio) {
+            Websodio webi = (Websodio) epiDemo;
             webi.enviarAlertaDeQueEstaOnline();
         } else {
             System.out.println("No hay que hacer más nada");
