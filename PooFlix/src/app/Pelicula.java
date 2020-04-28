@@ -2,6 +2,10 @@ package app;
 
 import java.util.List;
 
+import app.personas.*; //Importa todo lo de ese paquete
+//import app.personas.Actor;
+//import app.personas.Director;
+
 public class Pelicula extends Contenido implements INominable {
 
     public Pelicula(String nombre, int duracionEnMinutos) {
